@@ -25,9 +25,9 @@ def isWinner(x, nums):
     maria = 0
     ben = 0
 
-    for n in nums:
+    for i in range(x):
         # print(len(thePrimes(n)))
-        if len(thePrimes(n)) % 2 == 0:
+        if len(thePrimes(nums[i])) % 2 == 0:
             ben = ben + 1
         else:
             maria = maria + 1
