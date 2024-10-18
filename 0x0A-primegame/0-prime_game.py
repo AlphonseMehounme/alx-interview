@@ -26,7 +26,7 @@ def isWinner(x, nums):
     ben = 0
 
     for n in nums:
-        print(len(thePrimes(n)))
+        # print(len(thePrimes(n)))
         if len(thePrimes(n)) % 2 == 0:
             ben = ben + 1
         else:
