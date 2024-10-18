@@ -26,10 +26,12 @@ def isWinner(x, nums):
     ben = 0
 
     for n in nums:
-        if len(thePrimes(n)) // 2 == 0:
-            maria += 1
+        print(len(thePrimes(n)))
+        if len(thePrimes(n)) % 2 == 0:
+            ben = ben + 1
         else:
-            ben += 1
+            maria = maria + 1
+        # print(maria, ben)
     if ben > maria:
         return 'Ben'
     return 'Maria'
